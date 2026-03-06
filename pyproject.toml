@@ -1,7 +1,7 @@
 [project]
 name = "testing-repository"
 version = "0.1.0"
-description = "Add your description here"
+description = "Unit_Testing repository for my assignment"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
