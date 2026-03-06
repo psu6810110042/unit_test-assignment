@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Tests",
+            "type": "shell",
+            "command": "uv run coverage run -m nose2 -v",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        },
+        {
+            "label": "Generate HTML",
+            "type": "shell",
+            "command": "uv run coverage html",
+            "presentation": {
+                "reveal": "silent"
+            }
+        },
+        {
+            "label": "Run Tests & Coverage",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Run Tests",
+                "Generate HTML"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
