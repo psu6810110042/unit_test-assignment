@@ -3,7 +3,6 @@ from _6810110042.two_characters import alternate
 
 
 class AlternateTest(unittest.TestCase):
-
     def test_standard_example(self):
         # arrange
         s = "beabeefeab"

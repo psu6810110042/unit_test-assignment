@@ -39,7 +39,7 @@ class CaesarCipherTest(unittest.TestCase):
         # arrange
         s = "Hello-World!"
         k = 100
-        expected_output = "Dahhk-Sknhz!" 
+        expected_output = "Dahhk-Sknhz!"
 
         # act
         result = caesarCipher(s, k)
